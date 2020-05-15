@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Admin.ControllerRegister">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox style="-fx-background-color: #01cafe;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Jobin">
+                           <font>
+                              <Font name="Segoe UI" size="29.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Easier to get job,just do it now !" />
+                     </children>
+                  </VBox>
+                  <HBox>
+                     <children>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#homeButton" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #00add2;" textFill="#f8f8f8">
+                           <graphic>
+                              <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/Home (2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #04c0ea;">
+                     <children>
+                        <Button fx:id="register" mnemonicParsing="false" onAction="#registerButton" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #00add2;" textFill="#f8f8f8">
+                           <graphic>
+                              <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Data">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="174.0">
+                     <children>
+                        <Button fx:id="uploadv" mnemonicParsing="false" onAction="#uploadvButton" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #00add2;" textFill="#f8f8f8">
+                           <graphic>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/training.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Video" wrappingWidth="98.205078125">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="191.0">
+                     <children>
+                        <Button fx:id="broadcast" mnemonicParsing="false" onAction="#broadcastButton" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #00add2;" textFill="#f8f8f8">
+                           <graphic>
+                              <ImageView fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/mail.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Broadcast">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="174.0">
+                     <children>
+                        <Button fx:id="logout" mnemonicParsing="false" onAction="#lgoutButton" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #00add2;" textFill="#f8f8f8">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="680.0">
+                     <children>
+                        <TableView fx:id="tabelAkun" prefHeight="319.0" prefWidth="680.0">
+                           <columns>
+                              <TableColumn fx:id="username" minWidth="100.0" prefWidth="125.0" text="Username" />
+                              <TableColumn fx:id="password" prefWidth="125.0" text="Password" />
+                              <TableColumn fx:id="email" prefWidth="125.0" text="email" />
+                              <TableColumn fx:id="passEmailkolom" minWidth="0.0" prefWidth="125.0" text="password email" />
+                              <TableColumn fx:id="status1" prefWidth="65.0" text="status" />
+                              <TableColumn fx:id="nmr_hp" minWidth="0.0" prefWidth="125.0" text="nmr_HP" />
+                           </columns>
+                        </TableView>
+                        <HBox prefHeight="41.0" prefWidth="485.0" />
+                        <TableView fx:id="tabelNotifikasi" prefHeight="263.0" prefWidth="598.0">
+                          <columns>
+                            <TableColumn fx:id="from" prefWidth="136.0" text="From" />
+                            <TableColumn fx:id="subject" minWidth="0.0" prefWidth="137.0" text="Subject" />
+                              <TableColumn fx:id="konten" minWidth="0.0" prefWidth="310.0" text="Konten" />
+                              <TableColumn fx:id="Tanggal" prefWidth="96.0" text="Tanggal" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="217.0">
+                     <children>
+                        <TextField fx:id="usernamefield" promptText="username">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="passwordfield" promptText="password">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="emailfield" promptText="email">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="passEmailfield" prefHeight="25.0" prefWidth="179.0" promptText="password">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="statusfield" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="197.0" promptText="Status">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="nomorhandphonefield" promptText="nomor handphone">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <AnchorPane prefHeight="120.0" prefWidth="217.0">
+                           <children>
+                              <Button fx:id="ubah" layoutX="94.0" layoutY="13.0" mnemonicParsing="false" onAction="#ubahAkun" text="ubah" />
+                              <Button fx:id="hapus" layoutX="155.0" layoutY="13.0" mnemonicParsing="false" onAction="#hapusAkun" text="hapus" />
+                              <Button fx:id="tambah" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#tambahAkun" prefHeight="25.0" prefWidth="59.0" text="tambah" />
+                              <Button fx:id="cari" layoutX="57.0" layoutY="108.0" mnemonicParsing="false" onAction="#aksiCari" prefHeight="25.0" prefWidth="104.0" text="Pencarian" />
+                              <TextField fx:id="pencarian" layoutX="18.0" layoutY="72.0" prefHeight="25.0" prefWidth="179.0" promptText="email" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
